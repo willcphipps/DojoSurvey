@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using DojoSurvey.Models;
 
 namespace DojoSurvey.Controllers {
     public class HomeController : Controller {
@@ -12,13 +13,9 @@ namespace DojoSurvey.Controllers {
         }
 
         [HttpPost ("result")]
-        public IActionResult Result (string name, string location, string language, string message) {
-            ViewBag.name = name;
-            ViewBag.location = location;
-            ViewBag.language = language;
-            ViewBag.message = message;
-
-            return View ("Result");
+        public IActionResult Result (Survey result) {
+            Survey FormData = result;
+            return View (FormData);
         }
 
     }
