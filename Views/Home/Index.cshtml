@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h2 id="dojo">Dojo Form</h2>
+            <form action="Result" method="post">
+                <div class="box2">
+                    <div class="labels">
+                        <label name="name" for="name">Your Name:</label>
+                        <label for="location">Dojo Location:</label>
+                        <label for="language">Favorite Language:</label>
+                    </div>
+                    <div class="forms">
+                        <input type="text" name="name">
+                        <select id="location" name="location">
+                            <option value="tulsa">Tulsa</option>
+                            <option value="seattle">Seattle</option>
+                            <option value="oakland">Oakland</option>
+                            <option value="sanjose">San Jose</option>
+                        </select>
+                        <select id="language" name="language">
+                            <option value="python">Python</option>
+                            <option value="javascript">Javascript</option>
+                            <option value="css">CSS</option>
+                            <option value="yiddish">Yiddish</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="text">
+                    <textarea name="message" value="message" rows="10" cols="65">write a note.</textarea>
+                </div>
+                <input type="submit">
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -2959,6 +2959,17 @@
     "CSharpLanguageVersion": 703
   },
   "RootNamespace": "DojoSurvey",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/CSharpMVC/DojoSurvey/Views/Home/Result.cshtml",
+      "TargetPath": "Views\\Home\\Result.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/CSharpMVC/DojoSurvey/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
