@@ -21,4 +21,5 @@
 /Users/williamphipps/Desktop/CodingDojo/CSharp/CSharpMVC/DojoSurvey/obj/Debug/netcoreapp2.2/DojoSurvey.pdb
 /Users/williamphipps/Desktop/CodingDojo/CSharp/CSharpMVC/DojoSurvey/obj/Debug/netcoreapp2.2/DojoSurvey.csproj.CopyComplete
 /Users/williamphipps/Desktop/CodingDojo/CSharp/CSharpMVC/DojoSurvey/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
-/Users/williamphipps/Desktop/CodingDojo/CSharp/CSharpMVC/DojoSurvey/obj/Debug/netcoreapp2.2/Razor/Views/Home/Result.g.cshtml.cs
+/Users/williamphipps/Desktop/CodingDojo/CSharp/CSharpMVC/DojoSurvey/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs
+/Users/williamphipps/Desktop/CodingDojo/CSharp/CSharpMVC/DojoSurvey/obj/Debug/netcoreapp2.2/Razor/Views/Home/success.g.cshtml.cs

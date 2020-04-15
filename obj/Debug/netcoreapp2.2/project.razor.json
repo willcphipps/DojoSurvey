@@ -2961,13 +2961,18 @@
   "RootNamespace": "DojoSurvey",
   "Documents": [
     {
-      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/CSharpMVC/DojoSurvey/Views/Home/Result.cshtml",
-      "TargetPath": "Views\\Home\\Result.cshtml",
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/CSharpMVC/DojoSurvey/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/CSharpMVC/DojoSurvey/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/CSharpMVC/DojoSurvey/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/CSharpMVC/DojoSurvey/Views/Home/success.cshtml",
+      "TargetPath": "Views\\Home\\success.cshtml",
       "FileKind": "mvc"
     }
   ],

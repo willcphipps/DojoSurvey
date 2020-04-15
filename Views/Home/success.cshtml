@@ -1,0 +1,50 @@
+
+@using DojoSurvey.Models
+@model Survey
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+.<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-3">Dojo Form!</h1>
+        <p class="lead">You have successfully added validations to your survey</p>
+        <hr class="my-2">
+        <p>Well done. You have added the dependencies neccessry to refractor your code. </p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/" role="button">Return to Survey</a>
+        </p>
+    </div>
+</div>
+    <div class="d-flex flex-row justify-content-center"></div>
+        <div class="text-left">
+            <p>Name:</p>
+            <p>Location:</p>
+            <p>Favorite Language:</p>
+            <p>Comment:</p>
+        </div>
+        <div class="text-right">
+            <p>@Model.Name</p>
+            <p>@Model.Location</p>
+            <p>@Model.Language</p>
+            <p>@Model.Message </p>
+        </div>
+            <a href="/"><button name='back'>return</button></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

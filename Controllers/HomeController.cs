@@ -6,17 +6,21 @@ using DojoSurvey.Models;
 
 namespace DojoSurvey.Controllers {
     public class HomeController : Controller {
-        public static Dictionary<string, string> Results = new Dictionary<string, string> ();
         [HttpGet ("")]
         public IActionResult Index () {
             return View ("Index");
         }
 
         [HttpPost ("result")]
-        public IActionResult Result (Survey result) {
-            Survey FormData = result;
-            return View (FormData);
+        public IActionResult Result (Survey results) {
+            if (ModelState.IsValid){
+                return View("Success", results);
+            }
+            else{
+                return View("Index");
+            }
         }
+
 
     }
 }

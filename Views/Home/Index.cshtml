@@ -1,3 +1,7 @@
+@using System.ComponentModel.DataAnnotations
+@model Survey
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,46 +9,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="box">
-            <h2 id="dojo">Dojo Form</h2>
-            <form action="/Result" method="post">
-                <div class="box2">
-                    <div class="labels">
-                        <label name="name" for="name">Your Name:</label>
-                        <label for="location">Dojo Location:</label>
-                        <label for="language">Favorite Language:</label>
-                    </div>
-                    <div class="forms">
-                        <input type="text" name="Name">
-                        <select id="location" name="Location">
-                            <option value="tulsa">Tulsa</option>
-                            <option value="seattle">Seattle</option>
-                            <option value="oakland">Oakland</option>
-                            <option value="sanjose">San Jose</option>
-                        </select>
-                        <select id="language" name="Language">
-                            <option value="python">Python</option>
-                            <option value="javascript">Javascript</option>
-                            <option value="css">CSS</option>
-                            <option value="yiddish">Yiddish</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="text">
-                    <textarea name="Message" value="Message" rows="10" cols="65">write a note.</textarea>
-                </div>
-                <input type="submit">
+    <div class="text-center jumbotron jumbotron-fluid m-5">
+        <h4 class="display-4">Dojo Form</h4>
+        <form asp-action="result" asp-controller="Home" method="post">
+            <div class="col m-2">
+                <span asp-validation-for="Name"></span>
+                <label asp-for="Name"></label>
+                <input asp-for="Name">
+            </div>
 
-            </form>
-        </div>
+            <div class="col m-2">
+                <span asp-validation-for="Location"></span>
+                <label asp-for="Location"></label>
+                <select asp-for="Location">
+                    <option value="">--</option>
+                    <option value="Tulsa">Tulsa</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Dallas">Dallas</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="DC">DC</option>
+                </select>
+            </div>
+            <div class="col m-2">
+                <span asp-validation-for="Language"></span>
+                <label asp-for="Language"></label>
+                <select asp-for="Language">
+                    <option value="">--</option>
+                    <option value="Python">Python</option>
+                    <option value="C#">CSharp</option>
+                    <option value="JS">JavaScript</option>
+                    <option value="Ruby">Ruby</option>
+                    <option value="Yiddish">Yiddish</option>
+                </select>
+            </div>
+            <div class="col m-2">
+                <span asp-validation-for="Message"></span>
+                <label asp-for="Message"></label>
+                <textarea asp-for="Message"></textarea>
+            </div>
+
+            <input value="Submit" type="submit">
+        </form>
     </div>
-
 </body>
 
 </html>
