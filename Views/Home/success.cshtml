@@ -7,6 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/css/style.css">
     <title>Document</title>
 </head>
@@ -25,25 +26,14 @@
         <p class="lead">
             <a class="btn btn-primary btn-lg" href="/" role="button">Return to Survey</a>
         </p>
+        <div class="">
+            <p>Name: @Model.Name</p>
+            <p>Location: @Model.Location</p>
+            <p>Favorite Language: @Model.Language</p>
+            <p>Comment: @Model.Message </p>
+        </div>
     </div>
 </div>
-    <div class="d-flex flex-row justify-content-center"></div>
-        <div class="text-left">
-            <p>Name:</p>
-            <p>Location:</p>
-            <p>Favorite Language:</p>
-            <p>Comment:</p>
-        </div>
-        <div class="text-right">
-            <p>@Model.Name</p>
-            <p>@Model.Location</p>
-            <p>@Model.Language</p>
-            <p>@Model.Message </p>
-        </div>
-            <a href="/"><button name='back'>return</button></a>
-            </div>
-        </div>
-    </div>
 
 </body>
 

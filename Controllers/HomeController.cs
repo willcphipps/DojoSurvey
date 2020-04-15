@@ -14,7 +14,7 @@ namespace DojoSurvey.Controllers {
         [HttpPost ("result")]
         public IActionResult Result (Survey results) {
             if (ModelState.IsValid){
-                return View("Success", results);
+                return View("success", results);
             }
             else{
                 return View("Index");
